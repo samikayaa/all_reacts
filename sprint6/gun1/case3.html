@@ -1,6 +1,6 @@
 <!--
-Aşağıdaki HTML uygulamayı React olarak yazmak için gerekli kütüphaneleri head bölümüne ekle. 
-- İpucu: React dokümantasyonuna installation -> 'try react locally' bölümüne bakabilirsin..
+Eğitim platformunuzda aşağıdaki kodu gözden geçiriyorsunuz. 
+İyi React uygulamaları (best practices) açısından hangi değişikliğin yapılması gerekir?
 -->
 
 <!DOCTYPE html>
@@ -8,27 +8,43 @@ Aşağıdaki HTML uygulamayı React olarak yazmak için gerekli kütüphaneleri 
  <head>
    <meta charset="UTF-8" />
    <title>Hello World</title>
-
-   <!-- Bu #1 kodu ve -->
    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-   <!-- Bu #2 kodu eklediğimizde soruyu çözmüş oluyoruz. -->
-   <!-- Don't use this in production: -->
    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
  </head>
  <body>
    <div id="root"></div>
    <script type="text/babel">
   
-     function MyApp() {
+    function MyApp() {
        return <h1>Hello, world!</h1>;
-     }
+    }
 
-     const container = document.getElementById('root');
-     const root = ReactDOM.createRoot(container);
-     root.render(<MyApp />);
+    /* sorunun yanıtı */
+    const container = document.getElementById("root");
+    const root = ReactDOM.createRoot(container);
+    root.render(<MyApp/>)
+
+            function LessonList() {
+            //let lessons = ["React", "JavaScript", "CSS"];
+
+            //sorunun yanıtı;
+            const [lessons, setLesson] = useState(["React", "JavaScript", "CSS"]);
+
+            return (
+            <>
+            <div>
+                <ul>
+                {lessons.map((lesson) => (
+                    <li key={lesson}>{lesson}</li>
+                ))}
+                </ul>
+                <span>{lessons.length}</span>
+            </div>
+            </>
+            );
+            }
+
 
    </script>
  </body>
