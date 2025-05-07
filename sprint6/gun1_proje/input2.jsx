@@ -8,21 +8,27 @@ const KareIdListesi = ['sqA', 'sqB', 'sqC', 'sqD'];
 export default function Kareler() {
  // ADIM 1: State'leri burada tanımlayabilirsiniz.
 
- const [sq, setSq] = useState("");
+ const [sqStatus, setSqStatus] = useState("");
 
  const classAdiAl = (id) => {
    // ADIM 2: Bu bir click handler değil, JSX içinde kullanılan bir yardımcı(helper) fonksiyondur.
    // Eğer argüman olarak verilen id state'de tutulan id ile eşleşirse, class adı 'active' olan bir string döndürmeli
    // diğer durumlar için boş string dönecek.
 
-   
-
+  return id === sqStatus ? "active" : "";
  };
 
 
  const aktifEt = (id) => {
    // ADIM 3: Bu click handler, tıklandığında aktif kareyi tutan state'i setter'ı ile güncellemeli.
    // eğer tıklanan önceden aktifse, aktifliğini kaldırmalıyız. (aktif kareyi tutan state'i sıfırlayabiliriz)
+
+  if (id === sqStatus) {
+    setSqStatus(null);
+  } else {
+    setSqStatus(id);
+  }
+
  };
 
 
