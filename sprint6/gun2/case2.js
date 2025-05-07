@@ -20,10 +20,15 @@ export default function App() {
 
 }
 
+// Burada amadım APP COMPONENTİNDEN CHILD KOMPONENTİNE state'i doğru bir şekilde göndermektir.
+// Bu sayede butona tıkladığımda state güncelleniyor. Yani yeni texti görüyorum. 
 
 //Child.js
 export default Child(props) => {
-    const { data } = props;
-  return (<h1>{data}</h1>);
+    const {data} = props;
+  return (
+            <div>
+                {data}
+            </div>);
   };
-  
+
