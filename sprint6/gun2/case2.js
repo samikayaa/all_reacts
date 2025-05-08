@@ -1,4 +1,4 @@
-    //export default function App() --> A harfi büyük olduğunda bu bir component oluyor!
+//export default function App() --> A harfi büyük olduğunda bu bir component oluyor!
 
 //App.js
 import {useState} from 'react';
@@ -20,7 +20,7 @@ export default function App() {
 
 }
 
-// Burada amadım APP COMPONENTİNDEN CHILD KOMPONENTİNE state'i doğru bir şekilde göndermektir.
+// Burada amacım APP COMPONENTİNDEN CHILD KOMPONENTİNE state'i doğru bir şekilde göndermektir.
 // Bu sayede butona tıkladığımda state güncelleniyor. Yani yeni texti görüyorum. 
 
 //Child.js
