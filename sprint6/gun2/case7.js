@@ -1,6 +1,6 @@
-Aşağıdaki kodda App component’i içerisindeki state’i kullanarak, her tıklamada sayacı bir artır. Gerekli propları Counter component'ine gönder.
+//Aşağıdaki kodda App component’i içerisindeki state’i kullanarak, her tıklamada sayacı bir artır. Gerekli propları Counter component'ine gönder.
 
-App.js
+//App.js
 
 import {useState} from 'react';
 import Counter from './Counter.js';
@@ -9,13 +9,13 @@ export default function App() {
   const [count, setCount] = useState(0); 
   
   function increment (){ 
-      
+      setCount(count+1);
    };
 
-  return <Counter />; 
+  return <Counter count={count} increment={increment}/>; 
 }
 
-Counter.js
+//Counter.js
 
 const Counter = (props) => { 
   const { count, increment } = props;
