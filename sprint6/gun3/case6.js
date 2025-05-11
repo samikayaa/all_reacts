@@ -13,7 +13,7 @@ export default function App() {
   useEffect( () => {
     axios
     .get("https://reqres.in/api/users/1")
-    .then( (response) => {setAvatar(response.how_to_get_one)})
+    .then( (response) => {setAvatar(response.data.data.avatar)}) //response.data incelenerek data.avatar'da URL olduğu kontrol edildi.
     .catch( (error) => {console.log(error)})
   }, [])
 
