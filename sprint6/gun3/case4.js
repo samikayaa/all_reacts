@@ -8,7 +8,6 @@
 
 
 //App.js
-
 import Item from './Item.js'
 import { useState } from "react";
 
@@ -28,7 +27,6 @@ export default function App() {
 }
 
 //Item.js
-
 import App from './App.js'
 
 export default function Item(props) {
