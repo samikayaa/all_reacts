@@ -22,10 +22,8 @@ export default function App(){
 
 
 
-
 /*
-
-SORU:
+ORJ. SORU:
 
 import styled from 'styled-components';
 
