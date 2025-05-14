@@ -13,7 +13,7 @@ export default function App(){
 
 export default function App(){
     return (
-      <div id="heading1" style={{backgroundColor:"red", padding=20px}}>Merhaba Dünya</div>
+      <div id="heading1" style={{backgroundColor:"red", padding:20px}}>Merhaba Dünya</div>
     )
    }
    
