@@ -1,3 +1,5 @@
+
+
 export default function FilmDetayları(props) {
     const { title, director, metascore } = props.movie;
    

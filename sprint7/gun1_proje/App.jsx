@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import KaydedilenlerListesi from './components/KaydedilenlerListesi';
+import FilmListesi from './FilmListesi';
 
 
 export default function App() {
@@ -32,6 +33,18 @@ export default function App() {
      */
        "Burayı kendi route'unuz ile değiştirin"
      }
+
+     <Router>
+        <Switch>
+            <Route exact path="/">
+                <FilmListesi /> 
+            </Route>
+            <Route exact path="/filmler/:id">
+                <Film /> 
+            </Route>
+        </Switch>
+     </Router>
+
    </div>
  );
 }

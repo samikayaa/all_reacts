@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {useParams} from 'react-router-dom';
 
 
 export default function Film(props) {
@@ -6,6 +7,7 @@ export default function Film(props) {
  /* Görev 5: Film component'i yüklendiğinde id'yi params'dan almalı ve 
  sahteVeri'deki movies içinden ilgili id'li filmi bulup getirmeli */
 
+ let {id} = useParams();
 
  if (!movie) {
    return <div>Film bilgisi yükleniyor...</div>;
