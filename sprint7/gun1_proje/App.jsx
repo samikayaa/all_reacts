@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Router, Switch, Route } from 'react-router-dom';
 
 import KaydedilenlerListesi from './components/KaydedilenlerListesi';
 import FilmListesi from './components/FilmListesi';
@@ -22,14 +22,21 @@ export default function App() {
    Kaydet butonunun olduğu component'e prop olarak gönderin.
    */
 
- function 
+
+    const kaydedilmisFilmler = kaydedilmisFilmler.find( (i) => {i.id == movie.id})  
+
+ function clickHandle() {
+    if (!filmListesi.includes(movie)) {
+        setFilmListesi([...filmListesi, movie]);
+    }
+ }
 
  };
 
 
  return (
    <div>
-     <KaydedilenlerListesi list={[]} />
+     <KaydedilenlerListesi list={kaydedilmisFilmler} />
      {
        /*
      Görev 3: 2 adet route tanımlayın.
@@ -43,10 +50,10 @@ export default function App() {
      <Router>
         <Switch>
             <Route exact path="/">
-                <FilmListesi /> 
+                <FilmListesi movies={filmListesi}/> 
             </Route>
-            <Route exact path="/filmler/:id">
-                <Film /> 
+            <Route exact path="/filmler/:id" >
+                <Film clickHandle={clickHandle}/> 
             </Route>
         </Switch>
      </Router>

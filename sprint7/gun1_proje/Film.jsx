@@ -35,7 +35,7 @@ export default function Film(props) {
        ))}
      </div>
      {/* Görev 6: kaydet butonu kaydedilenler state'ine filmi eklemeli */}
-     <div className="save-button">Kaydet</div>
+     <div className="save-button" onClick={clickHandle}>Kaydet</div>
    </div>
  );
 }
