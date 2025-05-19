@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 import KaydedilenlerListesi from './components/KaydedilenlerListesi';
-import FilmListesi from './FilmListesi';
+import FilmListesi from './components/FilmListesi';
+import Film from './components/Film';
+import { movies } from './sahteVeri.js';
 
 
 export default function App() {
@@ -9,8 +12,8 @@ export default function App() {
  kaydedilmiş filmler ve film listesi için 2 tane state tanımlayın.
  film listesini sahteVeri'den alın.
  */
- const [kaydedilmisFilmler, setKaydedilmisFilmler] = useState("");
- const [filmListesi, setFilmListesi] = useState("sahteVeri");
+ const [kaydedilmisFilmler, setKaydedilmisFilmler] = useState([]);
+ const [filmListesi, setFilmListesi] = useState(movies);
 
  const KaydedilenlerListesineEkle = (movie) => {
    /* Görev: 2
@@ -18,6 +21,9 @@ export default function App() {
    aynı filmi 2. kez eklememeli.
    Kaydet butonunun olduğu component'e prop olarak gönderin.
    */
+
+ function 
+
  };
 
 
