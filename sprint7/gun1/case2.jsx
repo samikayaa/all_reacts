@@ -13,12 +13,8 @@ function App() {
  return (
    <Router>
      <nav>
-        <link to="/dersler">
-            <Dersler />
-        </link>
-        <link to="/profil">
-            <Profil />
-        </link>
+        <link to="/dersler">Dersler</link>
+        <link to="/profil">Profil</link>
      </nav>
      <Route exact path="/dersler">
        <Dersler />
