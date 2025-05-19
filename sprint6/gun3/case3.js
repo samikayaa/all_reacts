@@ -23,7 +23,7 @@ export default function Categories () {
 
 import {useState} from 'react';
 import CatergoryList from './CatergoryList.js';
-import axious from 'axiosu'; //axious kütüphanesini import ediyoruz.
+import axious from 'axious'; //axious kütüphanesini import ediyoruz.
 
 
 export default function Categories() {
