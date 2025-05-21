@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useHistory } from "react-router-dom";
 
 export default function Login() {
 
@@ -10,6 +11,7 @@ export default function Login() {
         console.log(`Email: ${email}, Password: ${password}`);
         setEmail("");
         setPassword("");
+        useHistory("/page")    
     }
 
     function handleEmailChange(event) {
@@ -20,13 +22,20 @@ export default function Login() {
         setPassword(event.target.value);
     }
 
+    
+    let history = useHistory();
+      
+    function handleClick() {
+        history.push("/page");
+    }
+
     return (<form onSubmit={handleSubmit}>
       <h1>Login</h1>
       <label>Email: </label>
-      <input type="email" onChange={handleEmailChange}/>
+      <input type="email" value={email} onChange={handleEmailChange}/>
       <label>Şifre: </label>
-      <input type="password" onChange={handlePasswordChange}/>
-      <buton>Giriş</buton>
+      <input type="password" value={password} onChange={handlePasswordChange}/>
+      <buton type="button" onClick={handleClick}>Giriş</buton>
     </form>)
   }
   
