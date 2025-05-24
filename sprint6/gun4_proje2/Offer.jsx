@@ -51,9 +51,7 @@ export default function Offer() {
       
         return (
           <Carousel
-            activeIndex={activeIndex}
-            next={next}
-            previous={previous}
+            activeIndex={activeIndex}  next={next} previous={previous}
           >
             <CarouselIndicators
               items={sahteVeri}

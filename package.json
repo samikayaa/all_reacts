@@ -13,6 +13,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "prettier": "3.5.3",
     "react-scripts": "latest"
   }
 }
