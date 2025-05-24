@@ -57,7 +57,7 @@ export default function App() {
        <ul>
             {   //map'ledik ve key değeri verdik;
                 activities.map( (activity) => (
-                    <li key="activity">{activity}</li>
+                    <li key={activity}>{activity}</li>
                 )) 
                 
             }
