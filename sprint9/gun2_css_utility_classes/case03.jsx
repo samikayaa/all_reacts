@@ -7,6 +7,7 @@ date-fns kütüphanesini kullanarak bugünün tarihini dd/MM/yyyy formatında g�
 
 */
 
+import './tailwind.css';
 import { format } from "date-fns";
 
 
