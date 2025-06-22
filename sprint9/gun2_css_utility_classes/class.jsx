@@ -15,18 +15,17 @@ kurulum : npm install -D tailwindcss
 initialize: npx tailwindcss init --> bunu çalıştırdığımızda projemize "tailwind.config.js" dosyası gelecektir.
 
 
-
 2. aşama;
 FOTO
-
 
 
 3. aşama;
 FOTO
 
 
-
 4. aşama;
 eklentilere "Tailwind CSS Intellicense" ekleyip kod yazımı sırasında önerileri alabiliriz.
 
+
+EK olarak w3schools sayfasıdna JS Dates inceledik.
 */
