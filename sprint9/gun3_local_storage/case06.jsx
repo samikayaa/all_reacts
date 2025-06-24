@@ -16,8 +16,8 @@ usePreference isimli bir custon hook tanımla ve App.js'deki state'lerde kullan.
 import { useState } from 'react';
 
 export default function App() {
-    const [theme, setTheme] = usePreference("light") //useState("light");
-    const [language, setLanguage] = usePreference("tr")  //useState("tr");
+    const [theme, setTheme] = usePreference("theme", "light") //useState("light");
+    const [language, setLanguage] = usePreference("language", "tr")  //useState("tr");
 
     return (
         <div>
