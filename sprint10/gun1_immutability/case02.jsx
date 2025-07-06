@@ -14,5 +14,4 @@ const ogrenci = {
     yas: 20,
 };
 
-
 const yeniOgrenci = { ...ogrenci, isim: "Ahmet Yılmaz" }; //burayı yazdık.
