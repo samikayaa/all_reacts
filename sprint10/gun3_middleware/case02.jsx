@@ -12,4 +12,4 @@ const customMiddleware = (store) => (next) => (action) => {
 };
 
 
-const store = createStore(rootReducer);
+export const store = createStore(rootReducer, applyMiddleware(thunk, customMiddleware));
