@@ -49,7 +49,7 @@ export default function Counter() {
 }
 
 
-💬 useState vs useReducer
+                            💬 useState vs useReducer
 Durum	                    useState	    useReducer
 Basit state	                ✅ Uygun	       🚫 Gereksiz karmaşık
 Bağlantılı/çoklu state	    🚫 Zorlaşır	    ✅ Avantajlı
