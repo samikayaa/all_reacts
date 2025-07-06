@@ -1,9 +1,9 @@
 /*
 
- Aşağıdaki ogrenci objesini immutable bir şekilde güncelleyerek, 
+Aşağıdaki ogrenci objesini immutable bir şekilde güncelleyerek, 
  
- yeniOgrenci adında yeni bir obje oluştur.
- İsim özelliğini Ahmet Yılmaz olarak değiştir.
+yeniOgrenci adında yeni bir obje oluştur.
+İsim özelliğini Ahmet Yılmaz olarak değiştir.
 
 */
 
