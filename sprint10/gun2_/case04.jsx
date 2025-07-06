@@ -31,26 +31,8 @@ export const reducer = combineReducers({
 });
 
 /*
-const userReducer = (state = {}, action) => {
-    switch (action.type) {
-      case 'SET_USER':
-        return { ...state, user: action.payload };
-      default:
-        return state;
-    }
-  };
-  
-  const postsReducer = (state = [], action) => {
-    switch (action.type) {
-      case 'ADD_POST':
-        return [...state, action.payload];
-      default:
-        return state;
-    }
-  };
-  
   export const reducer = combineReducers({
     user: userReducer,
     posts: postsReducer,
   });
-  */
+*/
