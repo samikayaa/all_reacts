@@ -1,6 +1,6 @@
 /*
 
-immutability
+immutability kavramı
 
 */
 
