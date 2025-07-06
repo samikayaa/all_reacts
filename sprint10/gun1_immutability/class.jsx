@@ -56,11 +56,11 @@ Bağlantılı/çoklu state	    🚫 Zorlaşır	    ✅ Avantajlı
 State geçmişini yönetmek	🚫 Zor	        ✅ Kolay
 Action bazlı mantık	        🚫 Uygun değil	✅ Uygun
 
+
+
 🧩 Reducer yapısı neleri içerir?
 initialState – başlangıç verisi
-
 reducer fonksiyonu – state güncelleme mantığı
-
 dispatch fonksiyonu – action tetikleme mekanizması
 
 */
