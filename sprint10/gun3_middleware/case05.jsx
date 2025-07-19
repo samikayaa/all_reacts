@@ -9,7 +9,7 @@ Aşağıdaki thunk action'ı tamamla.
 payload olarak response'da gelen data'yı vermeli. 
 - hata aldığında FETCH_DATA_ERROR tipinde bir action dispatch etmeli. 
 payload olarak error objesindeki message'ı vermeli.
-
+ 
 */
 
 

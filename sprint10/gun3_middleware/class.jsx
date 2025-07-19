@@ -42,4 +42,4 @@ npm install redux-thunk
 ⏱️ Ne için ideal	API istekleri, zaman gecikmesi, koşullu dispatch
 🔌 Alternatif	    redux-saga, redux-observable
 
-*/
+*/ 
